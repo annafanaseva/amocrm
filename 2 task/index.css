@@ -1,0 +1,429 @@
+* {
+  font-size: 16px;
+  color: #e4e5ea;
+  font-weight: 500;
+  font-family: "Inter";
+}
+
+body {
+  background-color: #0e1014;
+}
+
+.section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100vw;
+  background-image: url(./assets/img/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* header */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.header-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-logo {
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+.header-logo-text {
+  margin-top: 10px;
+  font-size: 10px;
+  max-width: 165px;
+  font-weight: 300;
+  font-family: "Montserrat";
+  line-height: 12.19px;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.header-items ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-items ul li a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+.header-items ul li a:last-child {
+  margin-right: 0;
+}
+
+.header-item {
+  cursor: pointer;
+}
+
+.header-contact {
+  display: flex;
+}
+
+.header-phone {
+  margin-right: 50px;
+}
+
+.header-contact-icon {
+  cursor: pointer;
+  margin-right: 33px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+/* main */
+
+.main {
+  margin-top: 100px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  max-width: 340px;
+}
+
+.main-colorful {
+  font-weight: 900;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  max-width: 270px;
+  margin-top: 30px;
+}
+
+.main-consultation {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-consultation-text {
+  margin-top: 30px;
+  text-align: right;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-consultation-items {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-consultation-item {
+  width: 140px;
+}
+.main-consultation-item:nth-child(n + 3) {
+  margin-top: 30px;
+}
+
+.main-consultation-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+}
+
+.main-consultation-item-subtitle {
+  font-family: "Montserrat";
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+}
+
+.main-consultation-button {
+  cursor: pointer;
+  background: #4077f3;
+  border: none;
+  margin-top: 60px;
+  padding: 21px 35px;
+}
+
+/* footer */
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 315px;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  padding-top: 60px;
+  margin-right: 100px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #656566;
+  margin-bottom: 20px;
+}
+
+.footer-links ul li {
+  margin-top: 10px;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-menu-wrapper {
+  display: flex;
+}
+
+.footer-links:first-child {
+  margin-right: 50px;
+}
+
+.footer-title-contact {
+  text-align: right;
+}
+
+.footer-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-icons img {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-info p {
+  font-family: "Montserrat";
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer-info a {
+  font-family: "Montserrat";
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1260px) {
+  .section {
+    max-width: 900px;
+  }
+
+  .header-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    max-width: 750px;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    margin-right: 0;
+    padding-top: 30px;
+  }
+
+  .footer-info {
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .footer-title-contact {
+    text-align: left;
+  }
+
+  .footer-icons {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    max-width: 460px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-item:first-child a {
+    margin-left: 0;
+  }
+
+  .main {
+    margin-top: 40px;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .main-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .main-consultation {
+    align-items: flex-start;
+  }
+
+  .main-consultation-text {
+    text-align: left;
+    margin-top: 45px;
+  }
+  .main-consultation-items {
+    margin-top: 20px;
+  }
+
+  .main-consultation-item-title {
+    position: relative;
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 14px;
+  }
+
+  .main-consultation-item-title:before {
+    content: "";
+    height: 2px;
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    top: 50%;
+    left: -14px;
+    width: 10px;
+    position: absolute;
+  }
+
+  .main-consultation-item-subtitle {
+    display: none;
+  }
+
+  .footer-info {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    max-width: 290px;
+  }
+  .section-header {
+    padding-top: 0;
+  }
+
+  .hero {
+    background-image: none;
+  }
+
+  .main {
+    background-image: url("./assets/img/background-320.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0;
+    padding: 40px 0 60px;
+  }
+
+  .header {
+    background: #0e1014;
+    padding: 20px 0;
+  }
+
+  .header-item:nth-child(5) {
+    display: none;
+  }
+
+  .header-item {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .header-items ul li a {
+    margin: 0 16px;
+  }
+
+  .main-consultation-button {
+    display: none;
+  }
+
+  .footer-title {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    margin-right: 40px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-icons img:first-child {
+    margin-left: 0;
+  }
+}
