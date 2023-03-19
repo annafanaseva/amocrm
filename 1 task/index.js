@@ -12,9 +12,9 @@ const createTimerAnimator = () => {
       const minutes = Math.floor((timestamp % 3600) / 60);
       const seconds = timestamp % 60;
 
-      timerEl.textContent = (`${addZero(hours)} : ${addZero(minutes)} : ${addZero(seconds)}`);
+      timerEl.textContent = `${addZero(hours)} : ${addZero(minutes)} : ${addZero(seconds)}`;
 
-      if (hours === 0 && minutes === 0 && seconds === 0) {
+      if (!hours && !minutes && !seconds) {
         buttonEl.disabled = false;
         clearInterval(interval);
       }
@@ -33,7 +33,7 @@ inputEl.addEventListener('input', () => {
 });
 
 buttonEl.addEventListener('click', () => {
-  inputEl.value === '' && alert("Введите кол-во секунд");
+  !inputEl.value?.length && alert("Введите кол-во секунд");
   const seconds = Number(inputEl.value);
 
   animateTimer(seconds);
@@ -42,5 +42,5 @@ buttonEl.addEventListener('click', () => {
 });
 
 function addZero(unitOfTime) {
-  return unitOfTime = (unitOfTime < 10) ? '0' + unitOfTime : unitOfTime;
+  return unitOfTime < 10 ? '0' + unitOfTime : unitOfTime;
 }
